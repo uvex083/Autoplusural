@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Каталог</title>
+</head>
+
+<body>
+<header>
+    <div class="header_cnt">
+        <div class="header_cnt_side">
+            <div class="burger_btn">
+                <span class="burger-menu-piece"></span>
+                <span class="burger-menu-piece"></span>
+                <span class="burger-menu-piece"></span>
+            </div>
+
+            <a class="logo" href="/">
+                <img src="img/logo.svg" alt="АвтоПлюсУрал">
+            </a>
+
+            <nav class="header_main_nav">
+                <a href="">Аренда автобусов</a>
+                <a href="">Экскурсии</a>
+                <a href="">Автобусные туры</a>
+                <a href="">О компании</a>
+                <a href="">Контакты</a>
+            </nav>
+        </div>
+
+        <div class="header_cnt_side">
+            <a class="header_phone" href="tel:+7(343)372-22-22">+7(343)372-22-22</a>
+
+            <a href="/" class="header_wa open_form">Написать</a>
+
+            <a href="#callback" class="header_callback open_modal">Позвонить</a>
+
+            <div class="language_button">
+                <div class="curr_lang">RU</div>
+                <div class="lang_list">
+                    <a href="/" class="lang_option">RU</a>
+                    <a href="/" class="lang_option">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dropdown_menu">
+
+        <div class="header_cnt">
+            <div class="dd_menu_cnt">
+                <nav class="dd_menu_nav">
+                    <a href="/">Наш автопарк</a>
+                    <div class="dd_menu_subnav">
+                        <a href="/">Автобусы</a>
+                        <a href="/">Микроавтобусы</a>
+                        <a href="/">Минивены</a>
+                        <a href="/">Представительские</a>
+                        <a href="/">Лимузины</a>
+                        <a href="/">Свадебные</a>
+                    </div>
+                    <a href="/">Экскурсии</a>
+                    <a href="/">Автобусные туры</a>
+                    <a href="/">Акции</a>
+                    <a href="/">О компании</a>
+                </nav>
+            </div>
+
+            <div class="dd_menu_cnt">
+                <div class="header_cnt_title">Контакты</div>
+
+                <div class="hc_addr_wrap">
+                    <div class="hc_addr">г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+                    <p>(Отдельный вход со стороны ул. Юлиуса Фучика, под вывеской «АвтоПлюсУрал») Рады вас слышать 24/7</p>
+                </div>
+
+                <div class="hc_tel_wrap">
+                    <p>Транспортный <strong>отдел</strong></p>
+                    <div class="hc_tel">+7 (343) 372-22-11, 372-22-11</div>
+                </div>
+
+                <div class="hc_tel_wrap">
+                    <p>Экскурсионный <strong>отдел</strong></p>
+                    <div class="hc_tel">+7 (343) 372-22-22, 328-22-00</div>
+                </div>
+
+                <a href="/" class="hc_mail">info@autoplusural.ru</a>
+
+                <a href="/" class="header_wa open_form">Пишите нам</a>
+
+                <a href="/" class="hc_file">Скачать реквизиты</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="center_cnt">
+        <a href="/" class="bc_home">Главная</a>
+        <span>Аренда автотранспорта</span>
+    </div>
+</div>
+
+<section class="cnt_page">
+    <div class="center_cnt">
+        <h1>Аренда автотранспорта</h1>
+
+        <div class="catalog_filter">
+            <div class="categories">
+                <div class="cat_filter_category active">
+                    Автобусы
+                    <span>9 моделей</span>
+                </div>
+
+                <div class="cat_filter_category">
+                    Микроавтобусы
+                    <span>9 моделей</span>
+                </div>
+
+                <div class="cat_filter_category">
+                    Минивэны
+                    <span>9 моделей</span>
+                </div>
+
+                <div class="cat_filter_category">
+                    Легковые
+                    <span> 9 моделей</span>
+                </div>
+
+                <div class="cat_filter_category ">
+                    Лимузины
+                    <span>9 моделей</span>
+                </div>
+
+                <div class="cat_filter_category">
+                    Свадебные
+                    <span>9 моделей</span>
+                </div>
+            </div>
+
+            <form class="catalog_filter_body">
+                <div class="cat_filter_trig">
+                    <span class="cft_open">Развернуть</span>
+                    <span class="cft_close">Свернуть</span> фильтр
+                </div>
+
+                <div class="cat_filter_hidden">
+                    <div class="cat_filter_row">
+                        <div class="custom_select">
+                            <div class="cs_current_option">Вид мероприятия</div>
+                            <div class="cs_options_list">
+                                <div class="cs_option">Детская перевозки</div>
+                                <div class="cs_option">Развоз сотрудников</div>
+                                <div class="cs_option">Свадьба</div>
+                            </div>
+                        </div>
+
+                        <div class="custom_select">
+                            <div class="cs_current_option">Вид мероприятия</div>
+                            <div class="cs_options_list">
+                                <div class="cs_option">Детская перевозки</div>
+                                <div class="cs_option">Развоз сотрудников</div>
+                                <div class="cs_option">Свадьба</div>
+                            </div>
+                        </div>
+
+                        <div class="custom_select">
+                            <div class="cs_current_option">Вид мероприятия</div>
+                            <div class="cs_options_list">
+                                <div class="cs_option">Детская перевозки</div>
+                                <div class="cs_option">Развоз сотрудников</div>
+                                <div class="cs_option">Свадьба</div>
+                            </div>
+                        </div>
+
+                        <div class="custom_select">
+                            <div class="cs_current_option">Вид мероприятия</div>
+                            <div class="cs_options_list">
+                                <div class="cs_option">Детская перевозки</div>
+                                <div class="cs_option">Развоз сотрудников</div>
+                                <div class="cs_option">Свадьба</div>
+                            </div>
+                        </div>
+
+                        <div class="custom_select">
+                            <div class="cs_current_option">Вид мероприятия</div>
+                            <div class="cs_options_list">
+                                <div class="cs_option">Детская перевозки</div>
+                                <div class="cs_option">Развоз сотрудников</div>
+                                <div class="cs_option">Свадьба</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat_filter_row">
+                        <div class="form_element price_slider_container">
+                            <label>Цена ₽</label>
+                            <div class="price_slider"></div>
+                        </div>
+
+                        <div class="form_element">
+                            <input type="checkbox" class="custom-checkbox" id="mphf1">
+                            <label id="promo" for="mphf1">Акция</label>
+                        </div>
+
+                        <div class="form_element">
+                            <input type="checkbox" class="custom-checkbox" id="mphf2">
+                            <label for="mphf2">Wi-Fi</label>
+                        </div>
+
+                        <div class="form_element">
+                            <input type="checkbox" class="custom-checkbox" id="mphf3">
+                            <label for="mphf3">Туалет</label>
+                        </div>
+                    </div>
+
+                    <div class="cat_filter_row">
+                        <div class="cat_filter_btns">
+                            <button type="submit" class="cat_filter_submit">Показать подходящие: <span>8</span></button>
+                            <button class="cat_filter_reset">Очистить</button>
+                        </div>
+
+                        <div class="cat_filter_docs">
+                            <a href="">Скачать список форму.doc</a>
+                            <span><strong>Внимание!</strong> Необходимо заполнить для детской перевозки</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="catalog_sort_container">
+            Сортировка:
+            <div class="catalog_sort">
+                <div class="curr_sort">по возрастанию года выпуска</div>
+                <div class="sort_list">
+                    <a href="/" class="sort_option">по возрастанию года выпуска</a>
+                    <a href="/" class="sort_option">по возрастанию года выпуска</a>
+                    <a href="/" class="sort_option">по возрастанию года выпуска</a>
+                    <a href="/" class="sort_option">по возрастанию года выпуска</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog_container">
+
+            <div class="catalog_item">
+                <div class="cat_item_gal">
+                    <div class="cat_item_gal_imgs">
+                        <div class="cat_item_gal_img" style="background-image: url(img/cs1.jpg);"></div>
+                        <div class="cat_item_gal_img" style="background-image: url(img/cs2.jpg);"></div>
+                        <div class="cat_item_gal_img" style="background-image: url(img/cs3.jpg);"></div>
+                    </div>
+                    
+                    <div class="cat_item_controls">
+                        <div class="cat_item_arr prev"></div>
+                        <div class="cat_item_arr next"></div>
+                    </div>
+                    
+                    <div class="cat_item_gal_pager"></div>
+                </div>
+
+                <div class="cat_item_cnt">
+                    <a href="/" class="cat_item_title">HIGER 6119</a>
+                    <div class="cat_item_subtitle">туристический автобус</div>
+                    <p>Оснащение: TV, кондиционер, столик. Свадьбы, праздничные корпоративы, выпускные вечера</p>
+
+                    <div class="cat_item_props">
+                        <div class="cat_item_params">
+                            <ul>
+                                <li>
+                                    <span>Вместимость</span>
+                                    <span>35 пасс.</span>
+                                </li>
+
+                                <li>
+                                    <span>Мин. время аренды</span>
+                                    <span>2 ч</span>
+                                </li>
+
+                                <li>
+                                    <span>Год выпуска</span>
+                                    <span>2012</span>
+                                </li>
+                            </ul>
+                            <a class="cat_item_detail_button" href="/">Подробнее</a>
+                        </div>
+                        <div class="cat_item_info">
+                            <div class="cat_item_q">в автопарке 6 единиц</div>
+                            <div class="cat_item_price">Цена: от <span>1400</span> ₽/час</div>
+                            <a href="#order" class="cat_item_order open_modal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_item">
+                <div class="cat_item_gal">
+                    <div class="cat_item_gal_imgs">
+                        <div class="cat_item_gal_img" style="background-image: url(img/cs1.jpg);"></div>
+                        <div class="cat_item_gal_img" style="background-image: url(img/cs2.jpg);"></div>
+                    </div>
+
+                    <div class="cat_item_controls">
+                        <div class="cat_item_arr prev"></div>
+                        <div class="cat_item_arr next"></div>
+                    </div>
+                    
+                    <div class="cat_item_gal_pager"></div>
+                </div>
+
+                <div class="cat_item_cnt">
+                    <a href="/" class="cat_item_title">HIGER 6119</a>
+                    <div class="cat_item_subtitle">туристический автобус</div>
+                    <p>Оснащение: TV, кондиционер, столик. Свадьбы, праздничные корпоративы, выпускные вечера</p>
+
+                    <div class="cat_item_props">
+                        <div class="cat_item_params">
+                            <ul>
+                                <li>
+                                    <span>Вместимость</span>
+                                    <span>35 пасс.</span>
+                                </li>
+
+                                <li>
+                                    <span>Мин. время аренды</span>
+                                    <span>2 ч</span>
+                                </li>
+
+                                <li>
+                                    <span>Год выпуска</span>
+                                    <span>2012</span>
+                                </li>
+                            </ul>
+                        <a class="cat_item_detail_button" href="/">Подробнее</a>
+                        </div>
+                        <div class="cat_item_info">
+                            <div class="cat_item_q">в автопарке 6 единиц</div>
+                            <div class="cat_item_price">Цена: от <span>1400</span> ₽/час</div>
+                            <a href="/" class="cat_item_order open_modal">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pagination">
+            <a href="/" class="prev"><</a>
+            <div class="pagination_items">
+                <a href="/" class="page active">1</a>
+                <a href="/" class="page">2</a>
+                <span>...</span>
+                <a href="/" class="page">15</a>
+            </div>
+            <a href="/" class="next">></a>
+        </div>
+
+        <h2>Заказ автотранспорта</h2>
+
+        <p>Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Таким образом рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений.</p>
+
+        <p>Таким образом постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации систем массового участия. Товарищи! новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+    </div>
+</section>
+
+<div class="swiper-container content_slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a data-fancybox="gal"
+               class="cs_bg"
+               href="img/cs1.jpg" style="background-image: url(img/cs1.jpg);"
+               data-caption="Новая модель организационной деятельности">
+            </a>
+            <p>Новая модель организационной деятельности</p>
+        </div>
+
+        <div class="swiper-slide">
+            <a data-fancybox="gal"
+               class="cs_bg"
+               href="img/cs2.jpg" style="background-image: url(img/cs2.jpg);"
+               data-caption="Новая модель организационной деятельности">
+            </a>
+            <p>Новая модель организационной деятельности</p>
+        </div>
+
+        <div class="swiper-slide">
+            <a data-fancybox="gal"
+               class="cs_bg"
+               href="img/cs3.jpg" style="background-image: url(img/cs3.jpg);"
+               data-caption="Новая модель организационной деятельности">
+            </a>
+            <p>Новая модель организационной деятельности</p>
+        </div>
+    </div>
+
+    <div class="swiper-pagination cs_pager"></div>
+</div>
+
+<section class="gratitudes cnt_page">
+    <div class="center_cnt">
+        <h2>Благодарственные письма</h2>
+
+        <div class="swiper-container gratitude_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="img/ms1.jpg">
+                        <img src="img/gramota.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination gratitude_pager"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="center_cnt">
+        <div class="footer_side">
+            <nav class="footer_nav">
+                <div class="footer_title">О нас</div>
+                <a href="/">Контакты</a>
+                <a href="/">Экскурсии</a>
+                <a href="/">Страхование</a>
+                <a href="/">Оплата онлайн</a>
+            </nav>
+
+            <nav class="footer_nav">
+                <div class="footer_title">Наш автопарк</div>
+                <a href="/">Автобусы</a>
+                <a href="/">Микроавтобусы</a>
+                <a href="/">Минивены</a>
+                <a href="/">Легковые</a>
+                <a href="/">Лимузины</a>
+                <a href="/">Свадебные</a>
+            </nav>
+
+            <nav class="footer_nav">
+                <div class="footer_title">Услуги</div>
+                <a href="/">Детские перевозки</a>
+                <a href="/">Трансфер из аэропорта</a>
+                <a href="/">Доставка сотрудников</a>
+                <a href="/">Транспортое обслуживание</a>
+            </nav>
+        </div>
+
+        <div class="footer_side">
+            <div class="footer_title">Контактная информация</div>
+            <div class="footer_contact_phones">
+                <div class="footer_contact_item phone">Единый телефон: <a href="">8(343)372-22-22</a></div>
+                <div class="footer_contact_item phone">Транспортный отдел: 8(343) 372-22-22, 372-22-11</div>
+                <div class="footer_contact_item phone">Экскурсионный отдел: 8(343) 328-00-11, 328-22-00</div>
+            </div>
+
+            <div class="footer_contact_item mail">Почта: info@autoplusural.ru</div>
+            <div class="footer_contact_item map">Адрес: 620130, г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+        </div>
+
+        <a href="#" class="footer_scroll_top">Вернуться наверх</a>
+    </div>
+
+    <div class="center_cnt">
+        <div class="footer_plain_text">© 2009 - 2020, АвтоПлюсУрал</div>
+        <div class="footer_plain_text">Все права защищены</div>
+    </div>
+</footer>
+
+<div class="overlay">
+    <div class="modal_window callback_form" id="callback">
+        <div class="modal_close">
+            <img src="img/close.svg" alt="">
+        </div>
+
+        <form>
+            <div class="modal_title">Мы вам перезвоним<br> и обо всём договоримся</div>
+            <div class="form_cnt">
+                <div class="form_itself">
+                    <div class="cf_inputs">
+                        <input type="text" class="cf_name" placeholder="Ваше имя">
+                        <input type="phone" class="cf_phone" placeholder="Телефон">
+                        <div class="cf_btns">
+                            <button type="submit" class="cf_send btn_green">Отправить</button>
+                            <div class="form_element">
+                                <input type="checkbox" class="custom-checkbox" id="callback_agree">
+                                <label for="callback_agree">Я даю согласие на обработку персональных данных</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--             <div class="thank_you">
+                              <p>Будем рады видеть вас на экскурсии.</p>
+                            </div> -->
+            </div>
+        </form>
+    </div>
+
+    <div class="modal_window order_form" id="order">
+        <div class="modal_close">
+            <img src="img/close.svg" alt="">
+        </div>
+
+        <form>
+            <div class="modal_title">Наш автотранспорт к вашим услугам</div>
+            <div class="form_cnt">
+                <div class="form_itself">
+                    <div class="of_inputs">
+                        <div class="of_justify">
+                            <input type="text" class="of_name" placeholder="Ваше имя">
+                            <input type="phone" class="of_phone" placeholder="Телефон">
+                        </div>
+                        <div class="of_add">Дополнительные поля по желанию</div>
+
+                        <div class="order_form_additional">
+                            <div class="of_justify">
+                                <div class="custom_select">
+                                    <div class="cs_current_option of_select">Вид мероприятия</div>
+                                    <div class="cs_options_list">
+                                        <div class="cs_option">Детская перевозки</div>
+                                        <div class="cs_option">Развоз сотрудников</div>
+                                        <div class="cs_option">Свадьба</div>
+                                    </div>
+                                </div>
+                                <div class="of_docs">
+                                    <a href="">Скачать список форму.doc</a>
+                                    <span>Необходимо заполнить для детской перевозки</span>
+                                </div>
+                            </div>
+                            <div class="of_subtitle">Параметры подачи транспорта</div>
+                            <div class="of_justify">
+                                <input type="text" class="of_begin" placeholder="Откуда вас забрать">
+                                <input type="text" name="Дата подачи" class="of_date form_date" placeholder="Дата подачи">
+                                <div class="custom_select">
+                                    <div class="cs_current_option of_select_time">Время</div>
+                                    <div class="cs_options_list">
+                                        <div class="cs_option">9.30</div>
+                                        <div class="cs_option">10.00</div>
+                                        <div class="cs_option">10.30</div>
+                                    </div>
+                                </div>
+
+                                <textarea id="add_desc" name="add_desc" rows="2" cols="33">Опишите маршрут</textarea>
+                            </div>
+                            <div class="of_subtitle">Время аренды</div>
+                            <div class="of_justify">
+                                <div class="cs_current_option of_select_time_rent">3 часа</div>
+                                <div class="cs_options_list">
+                                    <div class="cs_option">4 часа</div>
+                                    <div class="cs_option">5 часов</div>
+                                    <div class="cs_option">6 часов</div>
+                                </div>
+                                <div class="time_rent_default">По умолчанию минимальное время аренды</div>
+                                <div class="form_element of_checkbox_back">
+                                    <input type="checkbox" class="custom-checkbox" id="ofback">
+                                    <label for="ofback">Вернуть на адрес подачи</label>
+                                </div>
+                                <input type="text" class="of_begin" placeholder="Куда доставить?">
+                                <input type="text" class="of_date form_date" placeholder="Дата подачи">
+                                <div class="custom_select">
+                                    <div class="cs_current_option of_select_time">Время</div>
+                                    <div class="cs_options_list">
+                                        <div class="cs_option">9.30</div>
+                                        <div class="cs_option">10.00</div>
+                                        <div class="cs_option">10.30</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="of_subtitle">Дополнительно</div>
+                            <div class="of_justify of_justify_chbox">
+                                <div class="form_element">
+                                    <input type="checkbox" class="custom-checkbox" id="luggage">
+                                    <label for="luggage">Будет багаж</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="checkbox" class="custom-checkbox" id="child_chair">
+                                    <label for="child_chair">Детское кресло</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="checkbox" class="custom-checkbox" id="water">
+                                    <label for="water">Нужна вода</label>
+                                </div>
+                            </div>
+                            <div class="custom_select pay_select">
+                                <div class="cs_current_option of_select">Вид оплаты</div>
+                                <div class="cs_options_list">
+                                    <div class="cs_option">Наличными</div>
+                                    <div class="cs_option">Картой</div>
+                                    <div class="cs_option">Оплата на сайте</div>
+                                </div>
+                            </div>
+                            <div class="additional_text">
+                                <textarea id="add_text" name="add_text" rows="5" cols="33">Расскажите о дополнительной информации, которая по вашему мнению важна</textarea>
+                            </div>
+                            <a class="add_file" href="/">Прикрепить файл</a>
+                        </div>
+                        <div class="cf_btns">
+                            <button type="submit" class="cf_send btn_green">Отправить</button>
+                            <!--<div class="close_add" href="#">Свернуть доп. поля</div>-->
+                        </div>
+                        <div class="form_element">
+                            <input type="checkbox" class="custom-checkbox" id="callback_agree">
+                            <label for="callback_agree">Я даю согласие на обработку персональных данных</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--             <div class="thank_you">
+                              <p>Будем рады видеть вас на экскурсии.</p>
+                            </div> -->
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

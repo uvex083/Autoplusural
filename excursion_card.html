@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Экскурсия карточка</title>
+</head>
+
+<body>
+<header>
+    <div class="header_cnt">
+        <div class="header_cnt_side">
+            <div class="burger_btn">
+                <span class="burger-menu-piece"></span>
+                <span class="burger-menu-piece"></span>
+                <span class="burger-menu-piece"></span>
+            </div>
+
+            <a class="logo" href="/">
+                <img src="img/logo.svg" alt="АвтоПлюсУрал">
+            </a>
+
+            <nav class="header_main_nav">
+                <a href="">Аренда транспорта</a>
+                <a href="">Экскурсии</a>
+                <a href="">Автобусные туры</a>
+                <a href="">О компании</a>
+                <a href="">Контакты</a>
+            </nav>
+        </div>
+
+        <div class="header_cnt_side">
+            <a class="header_phone" href="tel:+7(343)372-22-22">+7(343)372-22-22</a>
+
+            <a href="/" class="header_wa open_form">Написать</a>
+
+            <a href="#callback" class="header_callback open_modal">Позвонить</a>
+
+            <div class="language_button">
+                <div class="curr_lang">RU</div>
+                <div class="lang_list">
+                    <a href="/" class="lang_option">RU</a>
+                    <a href="/" class="lang_option">EN</a>
+                    <a href="/" class="lang_option">СHN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dropdown_menu">
+
+        <div class="header_cnt">
+            <div class="dd_menu_cnt">
+                <nav class="dd_menu_nav">
+                    <a href="/">Наш автопарк</a>
+                    <div class="dd_menu_subnav">
+                        <a href="/">Автобусы</a>
+                        <a href="/">Микроавтобусы</a>
+                        <a href="/">Минивены</a>
+                        <a href="/">Легковые</a>
+                        <a href="/">Лимузины</a>
+                        <a href="/">Свадебные</a>
+                    </div>
+                    <a href="/">Экскурсии</a>
+                    <a href="/">Автобусные туры</a>
+                    <a href="/">Акции</a>
+                    <a href="/">О компании</a>
+                </nav>
+            </div>
+
+            <div class="dd_menu_cnt">
+                <div class="header_cnt_title">Контакты</div>
+
+                <div class="hc_addr_wrap">
+                    <div class="hc_addr">г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+                    <p>(Отдельный вход со стороны ул. Юлиуса Фучика, под вывеской «АвтоПлюсУрал») Рады вас слышать 24/7</p>
+                </div>
+
+                <div class="hc_tel_wrap">
+                    <p>Транспортный <strong>отдел</strong></p>
+                    <div class="hc_tel">+7 (343) 372-22-11, 372-22-11</div>
+                </div>
+
+                <div class="hc_tel_wrap">
+                    <p>Экскурсионный <strong>отдел</strong></p>
+                    <div class="hc_tel">+7 (343) 372-22-22, 328-22-00</div>
+                </div>
+
+                <a href="/" class="hc_mail">info@autoplusural.ru</a>
+
+                <a href="/" class="header_wa open_form">Пишите нам</a>
+
+                <a href="/" class="hc_file">Скачать реквизиты</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="main_page_hero hero_section exc_pic" style="background-image: url(img/exc_card.jpg);">
+    <div class="breadcrumbs exc_bread tour_bread">
+        <a href="/" class="bc_home">Главная</a>
+        <a href="/">Аренда автотранспорта</a>
+        <span>Туристический автобус HIGER 6119</span>
+    </div>
+    <div class="center_cnt">
+        <div class="exc_title">Обзорная экскурия по городу Екатеринбургу</div>
+        <div class="exc_subtitle">Увидеть главные достопримечательности и посетить лучшие смотровые площадки</div>
+        <div class="exc_params">
+            <ul>
+                <li>
+                    <span>Продолжительность экскурсии</span>
+                    <span class="param_dot"></span>
+                    <span>4 ч</span>
+                </li>
+                <li>
+                    <span>Минимальное количество человек</span>
+                    <span class="param_dot"></span>
+                    <span>10</span>
+                </li>
+                <li>
+                    <span>Wi-Fi</span>
+                    <span class="param_dot"></span>
+                    <span>Есть</span>
+                </li>
+                <li>
+                    <span>Гид</span>
+                    <span class="param_dot"></span>
+                    <span>Есть</span>
+                </li>
+            </ul>
+            <div class="exc_total">Цена: от <span>10 000</span> ₽</div>
+        </div>
+        <a href="/" class="btn_green exc_item_btn">Хочу увидеть</a>
+        <a href="/" class="btn_transp exc_item_btn">Посмотреть маршрут</a>
+    </div>
+</section>
+<section class="about_page_cnt">
+    <div class="center_cnt">
+        <div class="cnt_note">
+            <div class="cnt_not_icon">
+                Название<br> акции
+            </div>
+            <div class="cnt_note_container">
+                <p>К Вашим услугам микроавтобусы и автобусы импортного производства повышенной комфортности, а также автомобили представительского класса с нашими профессиональными водителями. Маршрут обговаривается и составляется предварительно.Все автомобили предоставляются в аренду только с водителем.</p>
+            </div>
+        </div>
+
+
+        <h2>Во время эскурсии вы</h2>
+        <p>Компания БизнесБас – крупнейшая транспортная компания Российской Федерации среди коммерческих перевозчиков. На текущий момент собственный автопарк компании насчитывает более 400 больших туристических автобусов, микроавтобусов и легковых автомобилей 2016-2020 г. в.
+        <p>Опираясь на 10-летний опыт работы в организации пассажирских перевозок, мы остановили свой выбор исключительно на надёжной, современной и комфортабельной автотехнике известных производителей. Большие туристические автобусы представлены брендами Yutong, MAN и Scania с количеством посадочных мест от 35 до 64 человек. В зависимости от мероприятия Вы можете выбрать автобус в
+            подходящей именно Вам комплектации – с туалетом, холодильником, мини-кухней, с USB-портами для зарядки мобильных устройств.</p>
+        <p>Кроме того, в компании БизнесБас Вы можете оформить заказ микроавтобуса Mercedes-Benz. Эта категория у нас представлена
+            машинами с количеством мест от 16 до 19. А легковые автомобили и минивэны брендов Mercedes-Benz, Volkswagen, Toyota и Skoda, вмещающие от 3 до 7 пассажиров, удовлетворят даже самых взыскательных клиентов.</p>
+        <p>В отдельную категорию можно выделить городские автобусы ПАЗ, которые успешно используются многими клиентами БизнесБас для организации трансферных перевозок своего персонала к удаленным местам работы.</p>
+        <h4>Такой внушительный собственный парк позволяет оказывать самый широкий спектр услуг:</h4>
+        <ul>
+            <li>транспортное обслуживание эскурсионных программ;</li>
+            <li>обслуживание корпоративных и MICE-мероприятий любого масштаба;</li>
+            <li>обслуживание частных торжественных мероприятий;</li>
+            <li>осуществление регулярных трансферов сотрудников к месту работы;</li>
+            <li>обеспечение транспортом для ежедневного решения бизнес-задач.</li>
+        </ul>
+    </div>
+    <div class="swiper-container content_slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a data-fancybox="gal"
+                   class="cs_bg"
+                   href="img/cs1.jpg" style="background-image: url(img/cs1.jpg);"
+                   data-caption="Новая модель организационной деятельности">
+                </a>
+                <p>Новая модель организационной деятельности</p>
+            </div>
+
+            <div class="swiper-slide">
+                <a data-fancybox="gal"
+                   class="cs_bg"
+                   href="img/cs2.jpg" style="background-image: url(img/cs2.jpg);"
+                   data-caption="Новая модель организационной деятельности">
+                </a>
+                <p>Новая модель организационной деятельности</p>
+            </div>
+
+            <div class="swiper-slide">
+                <a data-fancybox="gal"
+                   class="cs_bg"
+                   href="img/cs3.jpg" style="background-image: url(img/cs3.jpg);"
+                   data-caption="Новая модель организационной деятельности">
+                </a>
+                <p>Новая модель организационной деятельности</p>
+            </div>
+        </div>
+
+        <div class="swiper-pagination cs_pager"></div>
+    </div>
+</section>
+<section class="related_prods exc_prods">
+    <div class="center_cnt">
+        <h2>Возможно вас заинтересует</h2>
+
+        <div class="related_exc">
+            <div class="related_exc_item">
+                <div class="related_exc_img" style="background-image:url(img/exc_img1.jpg)"></div>
+                <div class="related_exc_desc">
+                    <a href="" class="related_exc_title">Обзорная экскурсия по Екатеринбургу</a>
+                    <div class="related_exc_subtitle">Увидеть главные достопримечательности и посетить лучше смотровые площадки</div>
+                    <div class="related_exc_stats">
+                        <div class="related_exc_stats_adv">
+                            <div class="exc_map_card"><a href="">Карта маршрута</a></div>
+                            <div class="exc_time">4 часа</div>
+                            <div class="exc_seats">от 10 чел</div>
+                        </div>
+                        <div class="related_exc_stats_price">
+                            <div class="rp_price">от <span>1440</span> ₽/час</div>
+                            <a class="exc_order" href="/">Хочу поехать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related_exc_item">
+                <div class="related_exc_img" style="background-image:url(img/exc_img2.jpg)"></div>
+                <div class="related_exc_desc">
+                    <a href="" class="related_exc_title">Обзорная экскурсия по Екатеринбургу</a>
+                    <div class="related_exc_subtitle">Увидеть главные достопримечательности и посетить лучше смотровые площадки</div>
+                    <div class="related_exc_stats">
+                        <div class="related_exc_stats_adv">
+                            <div class="exc_map_card"><a href="">Карта маршрута</a></div>
+                            <div class="exc_time">4 часа</div>
+                            <div class="exc_seats">от 10 чел</div>
+                        </div>
+                        <div class="related_exc_stats_price">
+                            <div class="rp_price">от <span>1440</span> ₽/час</div>
+                            <a class="exc_order" href="/">Хочу поехать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related_exc_item">
+                <div class="related_exc_img" style="background-image:url(img/exc_img3.jpg)"></div>
+                <div class="related_exc_desc">
+                    <a href="" class="related_exc_title">Обзорная экскурсия по Екатеринбургу</a>
+                    <div class="related_exc_subtitle">Увидеть главные достопримечательности и посетить лучше смотровые площадки</div>
+                    <div class="related_exc_stats">
+                        <div class="related_exc_stats_adv">
+                            <div class="exc_map_card"><a href="">Карта маршрута</a></div>
+                            <div class="exc_time">4 часа</div>
+                            <div class="exc_seats">от 10 чел</div>
+                        </div>
+                        <div class="related_exc_stats_price">
+                            <div class="rp_price">от <span>1440</span> ₽/час</div>
+                            <a class="exc_order" href="/">Хочу поехать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="exc_other" href="/">Посмотреть все эскурсии</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="center_cnt">
+        <div class="footer_side">
+            <nav class="footer_nav">
+                <div class="footer_title">О нас</div>
+                <a href="/">Контакты</a>
+                <a href="/">Экскурсии</a>
+                <a href="/">Страхование</a>
+                <a href="/">Оплата онлайн</a>
+            </nav>
+
+            <nav class="footer_nav">
+                <div class="footer_title">Наш автопарк</div>
+                <a href="/">Автобусы</a>
+                <a href="/">Микроавтобусы</a>
+                <a href="/">Минивены</a>
+                <a href="/">Легковые</a>
+                <a href="/">Лимузины</a>
+                <a href="/">Свадебные</a>
+            </nav>
+
+            <nav class="footer_nav">
+                <div class="footer_title">Услуги</div>
+                <a href="/">Детские перевозки</a>
+                <a href="/">Трансфер из аэропорта</a>
+                <a href="/">Доставка сотрудников</a>
+                <a href="/">Транспортое обслуживание</a>
+            </nav>
+        </div>
+
+        <div class="footer_side">
+            <div class="footer_title">Контактная информация</div>
+            <div class="footer_contact_phones">
+                <div class="footer_contact_item phone">Единый телефон: <a href="">8(343)372-22-22</a></div>
+                <div class="footer_contact_item phone">Транспортный отдел: 8(343) 372-22-22, 372-22-11</div>
+                <div class="footer_contact_item phone">Экскурсионный отдел: 8(343) 328-00-11, 328-22-00</div>
+            </div>
+
+            <div class="footer_contact_item mail">Почта: info@autoplusural.ru</div>
+            <div class="footer_contact_item map">Адрес: 620130, г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+        </div>
+
+        <a href="#" class="footer_scroll_top">Вернуться наверх</a>
+    </div>
+
+    <div class="center_cnt">
+        <div class="footer_plain_text">© 2009 - 2020, АвтоПлюсУрал</div>
+        <div class="footer_plain_text">Все права защищены</div>
+    </div>
+</footer>
+
+<div class="overlay">
+    <div class="modal_window callback_form" id="callback">
+        <div class="modal_close">
+            <img src="img/close.svg" alt="">
+        </div>
+
+        <form>
+            <div class="modal_title">Мы вам перезвоним<br> и обо всём договоримся</div>
+            <div class="form_cnt">
+                <div class="form_itself">
+                    <div class="cf_inputs">
+                        <input type="text" class="cf_name" placeholder="Ваше имя">
+                        <input type="phone" class="cf_phone" placeholder="Телефон">
+                        <div class="cf_btns">
+                            <button type="submit" class="cf_send btn_green">Отправить</button>
+                            <div class="form_element">
+                                <input type="checkbox" class="custom-checkbox" id="callback_agree">
+                                <label for="callback_agree">Я даю согласие на обработку персональных данных</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--             <div class="thank_you">
+                              <p>Будем рады видеть вас на экскурсии.</p>
+                            </div> -->
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

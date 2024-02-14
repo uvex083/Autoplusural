@@ -1,0 +1,852 @@
+/*Шапка*/
+@media (max-width: 414px) {
+    header {height: 90px;}
+}
+
+
+@media (max-width: 1700px) {
+    .header_main_nav {display: none;}
+}
+
+@media (min-width: 970px) and (max-width: 1110px){
+    .logo {
+        margin: 0 30px;
+    }
+    .header_callback {
+        margin-right: 25px;
+    }
+    .header_cnt_side {
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 1009px) {
+    a.header_phone {
+        display: none;
+    }
+    .logo {
+        margin: 0 25px;
+    }
+    .header_callback {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .header_cnt {
+        padding: 15px 25px;
+    }
+    .header_wa {
+        display:none;
+    }
+}
+
+@media (max-width: 530px) {
+    .header_callback {
+        display:none;
+    }
+}
+
+/*Футер*/
+@media (max-width: 1022px) {
+    .footer_side:first-child {
+        margin-bottom: 60px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer_nav:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer_contact_item a {
+        display: block;
+        margin: 10px 0 20px 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 542px) {
+    .footer_title {
+        height: 52px;
+        margin-bottom: 20px;
+    }
+    .footer_nav {
+        margin-right: 3.7vw;
+    }
+}
+
+/*Общие*/
+@media (max-width: 767px) {
+    .center_cnt {
+        padding: 0 45px;
+    }
+    h1, h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .content_slider  {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+
+    .cs_pager {
+        margin-top: 10px;
+    }
+
+    .gratitudes.cnt_page {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center_cnt {
+        padding: 0 20px;
+    }
+    h1, h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    ul, li, p {
+        line-height: 160%;
+    }
+    /*Фактойд*/
+    .mp_note_container p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cnt_table_wrap table {
+        width: 1000px;
+        margin-bottom: 10px;
+    }
+
+    .cnt_table_wrap {
+        overflow-y: hidden;
+        overflow-x: auto;
+        position: relative;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .product_params {
+        margin-left: 50px;
+        width: 380px;
+    }
+
+    .ps_pager {
+        bottom: 10px !important;
+    }
+
+    .cat_filter_row .custom_select {
+        width: calc(33.333% - 19px);
+        margin-bottom: 15px;
+    }
+
+    .cat_filter_row .form_element:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .cat_filter_row .custom_select:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .cat_filter_row:last-child {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .cat_filter_docs {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1, h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 1460px) {
+    a.footer_scroll_top {
+        display: none;
+    }
+}
+
+/*Выпадающие меню*/
+@media (max-width: 1300px) {
+    .dd_menu_cnt {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .dd_menu_cnt {
+        padding: 0 20px;
+    }
+    .dropdown_menu .header_cnt {
+        flex-wrap: wrap;
+    }
+    .hc_tel,
+    .header_cnt_title,
+    .hc_mail,
+    .hc_addr,
+    .hc_tel_wrap p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .dd_menu_cnt:first-child {
+        border: none;
+        width: 100%;
+    }
+    .dropdown_menu {
+        padding: 40px 0;
+    }
+    .dd_menu_cnt:last-child {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .hc_file {
+        display: none;
+    }
+}
+
+/*Главная баннер*/
+@media (max-width: 640px) {
+    .mp_hero_filter_select {
+        flex-wrap: wrap;
+    }
+    .mp_hero_filter form .cs_current_option
+    {
+        margin-bottom: 20px;
+    }
+    .mp_hero_filter .custom_select:not(:last-child) {
+        margin-right: 0px;
+    }
+    .mp_hero_filter .form_element:not(:last-child) {
+        margin: 0 15px 15px 0;
+        font-weight: 500;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .hero_title {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .hero_subtitle {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .hero_desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .form_element:not(.price_slider_container){
+        margin-bottom: 15px;
+    }
+
+    .form_element:not(.price_slider_container):not(:last-child){
+        margin-right: 30px;
+    }
+
+    .cat_filter_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cat_filter_reset {
+        margin-top: 15px;
+    }
+
+}
+
+/*Главная услуги*/
+@media (min-width: 769px) and (max-width: 970px){
+    .mps_list_item_cnt {
+        width: 477px;
+        padding: 20px 30px;
+
+    }
+    .mps_list_item_title {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mps_list_item {
+        flex-wrap: wrap;
+    }
+    .mps_list_item_img {
+        width: 100%;
+    }
+    .mps_list_item:nth-of-type(odd) .mps_list_item_cnt {
+        margin-left: 0px;
+    }
+    .mps_list_item:nth-of-type(even) .mps_list_item_cnt {
+        margin-right: 0px;
+    }
+    .mps_list_item_cnt {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+
+    .mps_list_item_cnt p {
+        margin-bottom: 0;
+    }
+
+    .mps_list_item_title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .product_img {
+        width: 100%;
+    }
+
+    .product_params {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .cat_filter_docs span {
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .price_slider,
+    .cat_filter_row .custom_select {
+        width: 100%;
+    }
+
+    .cat_filter_row .custom_select:not(:last-child){
+        margin-right: 0;
+    }
+
+    .cat_filter_row .form_element.price_slider_container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    .price_slider_container label {
+        margin-bottom: 15px;
+    }
+
+    .cat_filter_trig {
+        display: block;
+        color: #89BB2A;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .cat_filter_trig:before {
+        content: '';
+        width: 18px;
+        height: 19px;
+        margin-right: 15px;
+        background: url(../img/filter.svg) center no-repeat;
+    }
+
+    .cat_filter_trig:after {
+        content: '';
+        width: 12px;
+        height: 9px;
+        background: url(../img/filter\_arr.svg) center no-repeat;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 4px);
+    }
+
+    .cat_filter_hidden {
+        margin-top: 25px;
+        display: none;
+    }
+
+    .cft_close {
+        display: none;
+    }
+
+    .catalog_filter_body {
+        padding: 30px 30px;
+    }
+
+    .cat_filter_trig span {
+        margin-right: 10px;
+    }
+
+    .cat_filter_trig.active .cft_open {
+        display: none;
+    }
+
+    .cat_filter_trig.active .cft_close {
+        display: block;
+    }
+
+    .cat_filter_trig.active:after {
+        transform: rotate(180deg);
+    }
+
+    .dropdown_menu {
+        height: calc(100vh - 90px);
+        overflow-y: auto;
+        padding: 0px;
+    }
+}
+
+/*Главная автотранспорт*/
+
+@media (max-width: 767px) {
+    .main_page_park {
+        padding-top: 70px;
+    }
+    .mp_park_list {
+        justify-content: space-around;
+    }
+    .mp_park_list_item {
+        width: calc(50% - 30px);
+        margin-right: 0px;
+    }
+
+    .gratitude_slider .swiper-slide a {
+        width: 100%;
+    }
+
+    .gratitude_slider .swiper-slide a img {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #cecece;
+    }
+
+    .gratitude_slider .swiper-slide {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .mp_park_list_item {
+        width: 100%;
+    }
+    .mp_park_list_item:not(:nth-of-type(3n)) {
+        margin-right: 0px;
+    }
+    .mpl_item_cnt {
+        padding: 15px 20px;
+    }
+}
+
+/*Главная преимущества*/
+@media (max-width: 767px) {
+    .main_page_features {
+        padding: 50px 0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 960px){
+    .mp_feature {
+        width: 50%;
+    }
+}
+
+@media (max-width: 499px) {
+    .mp_feature {
+        width: 100%;
+    }
+}
+
+/*Контакты*/
+@media (max-width: 1000px) {
+    .contacts_cnt {
+        flex-wrap: wrap;
+    }
+    .contacts_cnt_info, .contacts_cnt_req{
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 499px) {
+    .contacts_cnt_info_tel_col {
+        flex-wrap: wrap;
+    }
+    .contacts_cnt_info_tel_tr {
+        margin-bottom: 20px;
+    }
+}
+
+/*404*/
+@media (max-width: 1050px) {
+    .cnt_404 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .center_404 {
+        padding-bottom: 300px;
+        background-position: bottom;
+        background-size: 80%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 530px) {
+    .center_404 {
+        background-size: 100%;
+        padding-bottom: 250px;
+    }
+}
+
+/*Каталог*/
+@media (max-width: 1000px) {
+    .cat_filter_category {
+        width: 33%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .cat_filter_category {
+        width: 49%;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .cat_filter_category {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1140px) and (min-width: 1001px) {
+    .cat_item_gal {
+        width: 60%;
+    }
+    .cat_item_cnt {
+        width: 40%;
+        padding: 20px 35px;
+    }
+    .cat_item_info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 900px)  {
+    .cat_item_gal {
+        width: 65%;
+    }
+    .cat_item_cnt {
+        width: 35%;
+        padding: 20px 35px;
+    }
+}
+
+@media (max-width: 899px) {
+    .cat_item_gal {
+        width: 100%;
+        height: 329px;
+    }
+    .cat_item_cnt {
+        width: 100%;
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .cat_item_gal {
+        width: 100%;
+        height: 220px;
+    }
+    .cat_item_cnt {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .cat_item_info, .cat_item_order {
+        width: 100%;
+    }
+}
+
+/*Карточка транспорта*/
+@media (max-width: 767px) {
+    .cnt_not_icon {
+        width: 100%;
+        border-bottom: 2px solid #89BB2A;
+        border-right: none;
+    }
+    .cnt_note_container {
+        width: 100%;
+    }
+}
+
+/*Экскурсии*/
+@media (max-width: 1024px) {
+    .catalog_filter_body .exc_tour_filter_row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .catalog_filter_body .exc_tour_price_slider {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1140px) and (min-width: 1001px) {
+
+    .exc_item_cnt {
+        width: 40%;
+        padding: 20px 35px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 900px)  {
+    .exc_item_gal {
+        width: 65%;
+    }
+    .exc_item_cnt {
+        width: 35%;
+        padding: 20px 35px;
+    }
+}
+@media (max-width: 899px) {
+    .exc_item_cnt {
+        width: 100%;
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .exc_item_info {
+        width: 100%;
+    }
+}
+
+/*Туры*/
+
+/*О компании*/
+
+@media (max-width: 1100px) {
+    .numbers .num {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 900px) {
+    .num_element {
+        width: 50%;
+    }
+    .numbers .num {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .num_separate {
+        display: none;
+    }
+    .numbers {
+        margin-top: 80px;
+    }
+    .num_element {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 570px) {
+    .numbers .num {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .numbers .num {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .req_item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    a.lic_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    a.lic_item {
+        width: 100%;
+    }
+}
+
+/*Экскурсии карточка*/
+@media (max-width: 768px) {
+    .exc_title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .exc_title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .exc_subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.exc_item_btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+@media (max-width: 530px) {
+    .exc_item_btn:not(:last-child) {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .exc_item_btn {
+        width: 100%;
+    }
+    .exc_bread,
+    .tour_bread {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .related_exc {
+        flex-direction: column;
+    }
+    .related_exc_item {
+        margin: 0 auto;
+    }
+}
+
+/*Тур карточка*/
+
+@media (max-width: 480px) {
+    .tour_time:after {
+        width: 40px;
+    }
+    .tour_time {
+        padding-left: 100px;
+    }
+}
+
+/*Акции*/
+
+/*@media (min-width: 770px) and (max-width: 1100px){*/
+@media (max-width: 1100px){
+    .promo_list_item_title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .promo_list_item_subtitle {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .promo_list_item_cnt {
+        padding: 20px 30px;
+    }
+
+}
+@media (max-width: 900px){
+    .promo_list_item:nth-of-type(odd),
+    .promo_list_item
+    {
+        flex-direction: column;
+    }
+    .promo_list_item_img {
+        width: 100%;
+    }
+    .promo_list_item:nth-of-type(odd) .promo_list_item_cnt {
+        margin: 0 auto;
+    }
+    .promo_list_item_cnt {
+        max-width: 100%;
+        border: none;
+        padding: 20px 0;
+        box-shadow: none;
+    }
+    .promo_list_item_desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .promo_list_item:nth-of-type(even) .promo_list_item_cnt {
+        margin-top: 0px;
+    }
+    .promo_list {
+        padding-top: 0px;
+    }
+    .promo_list_item {
+        margin-bottom: 90px;
+    }
+}
+
+/*Заявка на авто*/
+@media (max-width: 767px) {
+    .of_name,
+    .of_phone {
+        max-width: 100%;
+    }
+    .modal_window {
+        padding: 40px 40px;
+    }
+    .of_justify_chbox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    .of_justify {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .of_begin,
+    .of_date {
+        max-width: 100%;
+    }
+    .cs_current_option.of_select,
+    .of_select_time_rent,
+    .of_select_time {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

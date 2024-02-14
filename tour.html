@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Автобусные туры</title>
+</head>
+
+<body>
+<header>
+  <div class="header_cnt">
+    <div class="header_cnt_side">
+      <div class="burger_btn">
+        <span class="burger-menu-piece"></span>
+        <span class="burger-menu-piece"></span>
+        <span class="burger-menu-piece"></span>
+      </div>
+
+      <a class="logo" href="/">
+        <img src="img/logo.svg" alt="АвтоПлюсУрал">
+      </a>
+
+      <nav class="header_main_nav">
+        <a href="">Аренда автобусов</a>
+        <a href="">Экскурсии</a>
+        <a href="">Автобусные туры</a>
+        <a href="">О компании</a>
+        <a href="">Контакты</a>
+      </nav>
+    </div>
+
+    <div class="header_cnt_side">
+      <a class="header_phone" href="tel:+7(343)372-22-22">+7(343)372-22-22</a>
+
+      <a href="/" class="header_wa open_form">Написать</a>
+
+      <a href="#callback" class="header_callback open_modal">Позвонить</a>
+
+      <div class="language_button">
+        <div class="curr_lang">RU</div>
+        <div class="lang_list">
+          <a href="/" class="lang_option">RU</a>
+          <a href="/" class="lang_option">EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dropdown_menu">
+
+    <div class="header_cnt">
+      <div class="dd_menu_cnt">
+        <nav class="dd_menu_nav">
+          <a href="/">Наш автопарк</a>
+          <div class="dd_menu_subnav">
+            <a href="/">Автобусы</a>
+            <a href="/">Микроавтобусы</a>
+            <a href="/">Минивены</a>
+            <a href="/">Представительские</a>
+            <a href="/">Лимузины</a>
+            <a href="/">Свадебные</a>
+          </div>
+          <a href="/">Экскурсии</a>
+          <a href="/">Автобусные туры</a>
+          <a href="/">Акции</a>
+          <a href="/">О компании</a>
+        </nav>
+      </div>
+
+      <div class="dd_menu_cnt">
+        <div class="header_cnt_title">Контакты</div>
+
+        <div class="hc_addr_wrap">
+          <div class="hc_addr">г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+          <p>(Отдельный вход со стороны ул. Юлиуса Фучика, под вывеской «АвтоПлюсУрал») Рады вас слышать 24/7</p>
+        </div>
+
+        <div class="hc_tel_wrap">
+          <p>Транспортный <strong>отдел</strong></p>
+          <div class="hc_tel">+7 (343) 372-22-11, 372-22-11</div>
+        </div>
+
+        <div class="hc_tel_wrap">
+          <p>Экскурсионный <strong>отдел</strong></p>
+          <div class="hc_tel">+7 (343) 372-22-22, 328-22-00</div>
+        </div>
+
+        <a href="/" class="hc_mail">info@autoplusural.ru</a>
+
+        <a href="/" class="header_wa open_form">Пишите нам</a>
+
+        <a href="/" class="hc_file">Скачать реквизиты</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="center_cnt">
+    <a href="/" class="bc_home">Главная</a>
+    <span>Автобусные туры</span>
+  </div>
+</div>
+
+<section class="cnt_page">
+  <div class="center_cnt">
+    <h1>Автобусные туры</h1>
+
+    <div class="catalog_filter">
+      <form class="catalog_filter_body">
+        <div class="cat_filter_row ">
+          <div class="custom_select">
+            <div class="cs_current_option">Направление</div>
+            <div class="cs_options_list">
+              <div class="cs_option">На юг</div>
+              <div class="cs_option">На север</div>
+            </div>
+          </div>
+
+          <div class="custom_select">
+            <div class="cs_current_option">Продолжительность</div>
+            <div class="cs_options_list">
+              <div class="cs_option">7 дней</div>
+              <div class="cs_option">14 дней</div>
+              <div class="cs_option">21 день</div>
+            </div>
+          </div>
+
+          <div class="custom_select">
+            <div class="cs_current_option">Класс гостиницы</div>
+            <div class="cs_options_list">
+              <div class="cs_option">3*</div>
+              <div class="cs_option">4*</div>
+              <div class="cs_option">5*</div>
+            </div>
+          </div>
+
+          <div class="form_element">
+            <input type="checkbox" class="custom-checkbox" id="mphf2">
+            <label for="mphf2">С проживанием</label>
+          </div>
+          <div class="form_element">
+            <input type="checkbox" class="custom-checkbox" id="mphf1">
+            <label id="promo" for="mphf1">Акция</label>
+          </div>
+
+        </div>
+
+        <div class="cat_filter_row serv_filter_row exc_tour_filter_row">
+          <div class="form_element price_slider_container exc_tour_price_slider">
+            <label>Цена ₽</label>
+            <div class="price_slider"></div>
+          </div>
+          <div>
+            <button type="submit" class="cat_filter_submit">Показать подходящие: <span>8</span></button>
+            <button class="cat_filter_reset">Очистить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="catalog_sort_container">
+      Сортировать по:
+      <div class="catalog_sort">
+        <div class="curr_sort">по возрастанию продолжительности экскурсии</div>
+        <div class="sort_list">
+          <a href="/" class="sort_option">по убыванию продолжительности экскурсии</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog_container">
+
+      <div class="catalog_item">
+        <div class="cat_item_gal">
+          <div class="cat_item_gal_imgs">
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic_2.jpg);"></div>
+          </div>
+
+          <div class="cat_item_controls">
+              <div class="cat_item_arr prev"></div>
+              <div class="cat_item_arr next"></div>
+          </div>
+
+          <div class="cat_item_gal_pager"></div>
+        </div>
+
+        <div class="exc_item_cnt">
+          <a href="/" class="exc_item_title">Автобусный тур в Сочи</a>
+          <div class="exc_item_subtitle">Увидеть главные достопримечательности и посетить лучшие смотровые площадки</div>
+          <a href="#" class="exc_map">Карта маршрута</a>
+          <div class="cat_item_props">
+            <div class="cat_item_params">
+              <ul>
+                <li>
+                  <span>Продолжительность</span>
+                  <span>14 дней</span>
+                </li>
+
+                <li>
+                  <span>Проживание</span>
+                  <span>Включено</span>
+                </li>
+
+                <li>
+                  <span>Гостиница</span>
+                  <span>3 *</span>
+                </li>
+              </ul>
+              <a class="cat_item_detail_button" href="/">Подробнее</a>
+            </div>
+
+            <div class="exc_item_info">
+              <div class="cat_item_price">Цена: от <span>10 000</span> ₽/чел</div>
+              <a href="/" class="cat_item_order open_modal">Хочу поехать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog_item">
+        <div class="cat_item_gal">
+          <div class="cat_item_gal_imgs">
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic_2.jpg);"></div>
+          </div>
+
+          <div class="cat_item_controls">
+              <div class="cat_item_arr prev"></div>
+              <div class="cat_item_arr next"></div>
+          </div>
+
+          <div class="cat_item_gal_pager"></div>
+        </div>
+
+        <div class="exc_item_cnt">
+          <a href="/" class="exc_item_title">Автобусный тур в Сочи</a>
+          <div class="exc_item_subtitle">Увидеть главные достопримечательности и посетить лучшие смотровые площадки</div>
+          <a href="#" class="exc_map">Карта маршрута</a>
+          <div class="cat_item_props">
+            <div class="cat_item_params">
+              <ul>
+                <li>
+                  <span>Продолжительность</span>
+                  <span>14 дней</span>
+                </li>
+
+                <li>
+                  <span>Проживание</span>
+                  <span>Включено</span>
+                </li>
+
+                <li>
+                  <span>Гостиница</span>
+                  <span>3 *</span>
+                </li>
+              </ul>
+              <a class="cat_item_detail_button" href="/">Подробнее</a>
+            </div>
+
+            <div class="exc_item_info">
+              <div class="cat_item_price">Цена: от <span>10 000</span> ₽/чел</div>
+              <a href="/" class="cat_item_order open_modal">Хочу поехать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog_item">
+        <div class="cat_item_gal">
+          <div class="cat_item_gal_imgs">
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic_2.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/tour_pic.jpg);"></div>
+            <div class="cat_item_gal_img" style="background-image: url(img/excursion.png);"></div>
+          </div>
+
+          <div class="cat_item_controls">
+              <div class="cat_item_arr prev"></div>
+              <div class="cat_item_arr next"></div>
+          </div>
+
+          <div class="cat_item_gal_pager"></div>
+        </div>
+
+        <div class="exc_item_cnt">
+          <a href="/" class="exc_item_title">Южная кругосветка: Сочи и Абхазия из Екатеринбурга, 7 городов</a>
+          <div class="exc_item_subtitle">Увидеть главные достопримечательности и посетить лучшие смотровые площадки</div>
+          <a href="#" class="exc_map">Карта маршрута</a>
+          <div class="cat_item_props">
+            <div class="cat_item_params">
+              <ul>
+                <li>
+                  <span>Продолжительность</span>
+                  <span>14 дней</span>
+                </li>
+
+                <li>
+                  <span>Проживание</span>
+                  <span>Включено</span>
+                </li>
+
+                <li>
+                  <span>Гостиница</span>
+                  <span>3 *</span>
+                </li>
+              </ul>
+              <a href="/">Подробнее</a>
+            </div>
+
+            <div class="exc_item_info">
+              <div class="cat_item_price">Цена: от <span>10 000</span> ₽/чел</div>
+              <a href="/" class="cat_item_order open_modal">Хочу поехать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pagination">
+      <a href="/" class="prev"><</a>
+      <div class="pagination_items">
+        <a href="/" class="page active">1</a>
+        <a href="/" class="page">2</a>
+        <span>...</span>
+        <a href="/" class="page">15</a>
+      </div>
+      <a href="/" class="next">></a>
+    </div>
+
+    <h2>Автобусные туры из Екатеринбурга</h2>
+
+    <ul>
+      <li>Познакомитесь с историей возникновения и разватия Екатеринбурга, крупнейшего города на Урале, индустирального, административного и культурного центра Свердловской области</li>
+      <li>Побываете на месте рождения города-завода — плотине, перекрывшей реку Исеть и ласково называемой горожанами - Плотинка и в Историческом сквере. Увидите памятник основателям города. </li>
+      <li>Побываете на Вознесенской горке, где узнаете легенды и тайны «золотого века» Екатеринбурга. </li>
+      <li>Посетите Храм-на-Крови, возведенный на месте дома Ипатьевых, где была расстреляна семья последнего русского царя, перед Вами откроются трагические страницы истории России и Урала 1918 года. </li>
+      <li>Познакомитесь с культурной жизнью Екатеринбурга, узнаете какие театры, музеи, выставки можно посетить в городе, увидите цирк, филармонию, Литературный квартал и еще много-много интересного...</li>
+    </ul>
+
+    <p>Обзорная экскурсия по Екатеринбургу продолжается интересным рассказом о границе между двумя частями света, возникновении ее в умах людей, живущих на заре цивилизации и поиске ее месторасположения на материке Евразия. Экскурсионный автобус выезжает к 17-ому км. Московского тракта, где расположен знак границы Европы и Азии.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="center_cnt">
+    <div class="footer_side">
+      <nav class="footer_nav">
+        <div class="footer_title">О нас</div>
+        <a href="/">Контакты</a>
+        <a href="/">Экскурсии</a>
+        <a href="/">Страхование</a>
+        <a href="/">Оплата онлайн</a>
+      </nav>
+
+      <nav class="footer_nav">
+        <div class="footer_title">Наш автопарк</div>
+        <a href="/">Автобусы</a>
+        <a href="/">Микроавтобусы</a>
+        <a href="/">Минивены</a>
+        <a href="/">Представительские</a>
+        <a href="/">Лимузины</a>
+        <a href="/">Свадебные</a>
+      </nav>
+
+      <nav class="footer_nav">
+        <div class="footer_title">Услуги</div>
+        <a href="/">Детские перевозки</a>
+        <a href="/">Трансфер из аэропорта</a>
+        <a href="/">Доставка сотрудников</a>
+      </nav>
+    </div>
+
+    <div class="footer_side">
+      <div class="footer_title">Контактная информация</div>
+      <div class="footer_contact_phones">
+        <div class="footer_contact_item phone">Единый телефон: <a href="">8(343)372-22-22</a></div>
+        <div class="footer_contact_item phone">Транспортный отдел: 8(343) 372-22-22, 372-22-11</div>
+        <div class="footer_contact_item phone">Экскурсионный отдел: 8(343) 328-00-11, 328-22-00</div>
+      </div>
+
+      <div class="footer_contact_item mail">Почта: info@autoplusural.ru</div>
+      <div class="footer_contact_item map">Адрес: 620130, г. Екатеринбург, ул. Юлиуса Фучика, 1</div>
+    </div>
+
+    <a href="#" class="footer_scroll_top">Вернуться наверх</a>
+  </div>
+
+  <div class="center_cnt">
+    <div class="footer_plain_text">© 2009 - 2020, АвтоПлюсУрал</div>
+    <div class="footer_plain_text">Все права защищены</div>
+  </div>
+</footer>
+
+<div class="overlay">
+  <div class="modal_window callback_form" id="callback">
+    <div class="modal_close">
+      <img src="img/close.svg" alt="">
+    </div>
+
+    <form>
+      <div class="modal_title">Мы вам перезвоним<br> и обо всём договоримся</div>
+      <div class="form_cnt">
+        <div class="form_itself">
+          <div class="cf_inputs">
+            <input type="text" class="cf_name" placeholder="Ваше имя">
+            <input type="phone" class="cf_phone" placeholder="Телефон">
+            <div class="cf_btns">
+              <button type="submit" class="cf_send btn_green">Отправить</button>
+              <div class="form_element">
+                <input type="checkbox" class="custom-checkbox" id="callback_agree">
+                <label for="callback_agree">Я даю согласие на обработку персональных данных</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--             <div class="thank_you">
+                      <p>Будем рады видеть вас на экскурсии.</p>
+                    </div> -->
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
